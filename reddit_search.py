@@ -17,8 +17,14 @@ from datetime import datetime, timezone
 from reddit_top import comment_summaries, get_token, post_summary, request_json, user_agent
 
 DEFAULT_SUBREDDITS = [
-    "investing", "stocks", "StockMarket", "ValueInvesting", "SecurityAnalysis",
-    "semiconductors", "AMD_Stock", "NVDA_Stock",
+    # general
+    "investing", "stocks", "StockMarket", "investing_discussion",
+    # analysis and value
+    "ValueInvesting", "SecurityAnalysis",
+    # long-term, ETFs, dividends
+    "Bogleheads", "ETFs", "dividends", "financialindependence",
+    # sectors and companies I follow
+    "semiconductors", "AMD_Stock", "NVDA_Stock", "BitcoinMining", "ASX_Bets",
 ]
 API = "https://oauth.reddit.com"
 
